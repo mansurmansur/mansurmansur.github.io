@@ -11,7 +11,7 @@ body{
 }
 /*  general container */
 .container{
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0 0;
     width: 100vw;
 }
@@ -20,7 +20,7 @@ body{
 .aboutMe{
     text-align: center;
     padding-bottom: 3em;
-    height: 100vh;
+    height: 100%;
 }
 .profile__photo{
     width: 230px;
@@ -43,7 +43,7 @@ body{
 .bigger__bar{
     margin: 0;
     height: 170px;
-    width: 100%;
+    width: 100vw;
     background-color: #E8E8E8;
 }
 
@@ -188,4 +188,66 @@ body{
 	font-family: "Maven pro", sans-serif;
     font-weight: 600;
     padding: 2rem 0;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 450px){  /* mobile size */
+    /* section aboutMe */
+    .aboutMe, .experience, .projects{
+        height: 100vh;
+    }
+    .photo__frame{
+        left: 33vw;
+        top: 13%;
+    }
+    .profile__photo{
+        height: 150px;
+        width: 150px;
+    }
+    .aboutMe__body{
+        margin-top: 100px;
+    }
+
+    .paragraph{
+        width: 90vw;
+        font-size: 18px;
+        padding: 2rem
+    }
+
+    .title{
+        font-size: 40px;
+    }
+    /* Experience */
+    .experience{
+        height: 100vh;
+        padding: 1.2rem 3rem;
+    }
+
+    .titles{
+        text-align: center;
+    }
+    .experience__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*projects*/
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project__header p{
+        font-size: 10px;
+    }
+    .project__header {
+        padding: 1rem;
+    }
+    .project__body{
+        width: 90vw;
+        font-size: 14px;
+        padding: 0 1.2rem;
+    }
 }
