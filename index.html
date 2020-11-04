@@ -5,103 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="Asset/css/style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Asset\bootstrap-3.3.5-dist\css\bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <section class="aboutMe__section">
-            <div class="aboutMe">
-               <div class="aboutMe__header">
-                   <div class="aboutMe__bar">
-                       <div class="smaller__bar"></div>
-                       <div class="bigger__bar"></div>
+    <div class="wrap">
+        <div class="thin__bar"></div>
+        <div class="container">
+            <section class="about">
+                <div class="row">
+                    <div class="text-center">
+                        <img src="Asset\img\mansur.jpeg"  class="img-circle center-block  img-responsive" alt="">
+                        <h2>Hi am Mansur</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio minus iusto ex provident laudantium quidem eos repudiandae id debitis aliquid.</p>
+                    </div>
+                    <div class="row" >
+                        <div class="col text-center">
+                            <div>
+                                <a href="mailto:mansurmansur@trentu.ca">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                                      </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div>
+                                <a href="https://github.com/mansurmansur?tab=overview&from=2020-07-01&to=2020-07-31"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/mansur-mansur-a0a325157/">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <section class="experience">
+                <div class="row">
+                    <h2 class="experience__title">
+                        My Experience
+                    </h2>
+                   <div class="experience1">
+                       <h2 class="titles">
+                           Front-end
+                       </h2>
+                       <ul class="experience__list">
+                           <li>html5</li>
+                           <li>css3</li>
+                           <li>javascript</li>
+                           <li>bootstrap</li>
+                       </ul>
                    </div>
-                   <div class="photo__frame">
-                       <img src="Asset\img\mansur.jpeg" alt="" class="profile__photo">
+                   <div class="experience2">
+                       <h2 class="titles">
+                           Back-end
+                       </h2>
+                       <ul class="experience__list">
+                           <li>sql</li>
+                           <li>php</li>
+                       </ul>
+                   </div>
+                   <div class="experience3">
+                       <h2 class="titles">
+                           Tools
+                       </h2>
+                       <ul class="experience__list">
+                           <li>github</li>
+                           <li>atom | vs code</li>
+                           <li>ssh</li>
+                       </ul>
                    </div>
                </div>
-               <div class="aboutMe__body">
-                   <h2 class="title">Hi, I'm Mansur</h2>
-                   <p class="paragraph">
-                       I am currently working on my software engineering degree at Trent University. I have 
-                       good understanding of object oriented concepts, and good with both front end and back end web 
-                       development.
-                   </p>
-               </div>
-           </div>
-       </section>
-       <section class="experience">
-           <div class="experience__header">
-               <h2 class="experience__title">
-                   My Experience
-               </h2>
-           </div>
-           <div class="experience__body">
-               <div class="experience1">
-                   <h2 class="titles">
-                       Front-end
-                   </h2>
-                   <ul class="experience__list">
-                       <li>html5</li>
-                       <li>css3</li>
-                       <li>javascript</li>
-                       <li>bootstrap</li>
-                   </ul>
-               </div>
-               <div class="experience2">
-                   <h2 class="titles">
-                       Back-end
-                   </h2>
-                   <ul class="experience__list">
-                       <li>sql</li>
-                       <li>php</li>
-                   </ul>
-               </div>
-               <div class="experience3">
-                   <h2 class="titles">
-                       Tools
-                   </h2>
-                   <ul class="experience__list">
-                       <li>github</li>
-                       <li>atom | vs code</li>
-                       <li>ssh</li>
-                   </ul>
-               </div>
-           </div>
-       </section>
-       <section class="projects">
-           <div class="projects__header">
-               <h2 class="projects__title">
-                   Projects
-               </h2>
-               <p>The following are few projects I worked on.</p>
-           </div>
-           <div class="projects__body">
-               <div class="project">
-                   <div class="project__header">
-                       <h3>BucketList</h3>
+           </section>
+           <section class="projects">
+               <div class="row">
+                   <h2>Projects</h2>
+                   <p>The following are few projects I worked on.</p>
+                   <div class="project">
+                       <div class="project__header">
+                           <h3>BucketList</h3>
+                       </div>
+                      <div class="project__body">
+                        <p>
+                            This is a web application which was done in web developement course. The was about making a user friendly
+                            BucketList with the following functionalities:
+                            <ul>
+                                <li>Users can create empty backet</li>
+                                <li> Users can add or delete item in a backet</li>
+                            </ul>
+                        </p>
+                      </div>
                    </div>
-                  <div class="project__body">
-                    <p>
-                        This is a web application which was done in web developement course. The was about making a user friendly
-                        BucketList with the following functionalities:
-                        <ul>
-                            <li>Users can create empty backet</li>
-                            <li> Users can add or delete item in a backet</li>
-                        </ul>
-                    </p>
-                  </div>
+                   <div class="project"></div>
+                   <div class="project"></div>
                </div>
-               <div class="project"></div>
-               <div class="project"></div>
-           </div>
-       </section>
-       <section class="courses">
-           <h2 class="course__title">Courses</h2>
-       </section>
-       <section class="footer">
-           <p>Copyright &#169; 2020 | Mansur Mansur </p>
-       </section>
+           </section>
+           <section class="courses">
+               <div class="row">
+                 <h2 class="course__title">Courses</h2>
+               </div>
+           </section>
+           <section class="footer">
+               <p>Copyright &#169; 2020 | Mansur Mansur </p>
+           </section>
+        </div>
     </div>
     <script src="Asset/script/app.js"></script>
 </body>
