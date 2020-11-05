@@ -23,7 +23,37 @@ body{
     height: 200px;
     bottom: 7.5em;
 }
-
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    color: #778899;
+}
+.detail{
+    width: 80vw;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.row .col{
+    padding: 20px;
+}
+.git-linkedin{
+   margin-top: 20px;
+}
+.git-linkedin a{
+    margin: 0 20px;
+}
+.about a{
+    padding: 10px 25px 10px 25px;
+    border: 2px solid  orangered;
+    text-decoration-style: none;
+    border-radius: 20px;
+}
+.about a:hover{
+    text-decoration: none;
+    background-color: orangered;
+}
 /*
  experience 
  */
@@ -32,10 +62,15 @@ body{
     width: 100%;
     background-color: #4c6d86;
     padding: 6em 4em 5.6em;
+}
+.experience h2{
+    font-weight: bolder;
+    padding: 3rem 0;
     color: white;
 }
-.exerience__list li{
-    padding: 30px;
+.experience h3{
+    font-weight: bold;
+    color: white;
 }
 /*
 Course
